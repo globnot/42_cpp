@@ -18,7 +18,7 @@ La série **C++ Modules** est une introduction progressive à la programmation o
 
 | Module | Thèmes abordés |
 |--------|----------------|
-| [CPP00](#cpp00) | Namespaces, classes, fonctions membres, `stdio streams` |
+| CPP00 | Namespaces, classes, fonctions membres, `stdio streams` |
 | CPP01 | Allocation mémoire, pointeurs sur membres, références, `switch` |
 | CPP02 | Forme canonique orthodoxe, surcharge d'opérateurs, nombres à virgule fixe |
 | CPP03 | Héritage |
