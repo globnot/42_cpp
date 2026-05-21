@@ -6,7 +6,7 @@
 /*   By: aborda <aborda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 17:02:13 by aborda            #+#    #+#             */
-/*   Updated: 2026/05/15 08:56:44 by aborda           ###   ########.fr       */
+/*   Updated: 2026/05/21 08:51:04 by aborda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,6 @@ Contact::Contact(const Contact& other) :
 /* OPERATEUR D'AFFECTATION */
 Contact& Contact::operator=(const Contact& other)
 {
-	/* si les deux objets sont differents en memoire alors fait une copie */
-	/* C'est une protection contre l'auto-affectation. Si on fait a = a on evite de detruire avant de copier */
-	/* ici this est un pointeur vers l'objet courant, c'est l'adresse memoire de l'objet */
 	if (this != &other)
 	{
 		_firstname = other._firstname;

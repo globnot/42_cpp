@@ -6,7 +6,7 @@
 /*   By: aborda <aborda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 11:56:21 by aborda            #+#    #+#             */
-/*   Updated: 2026/05/08 08:37:27 by aborda           ###   ########.fr       */
+/*   Updated: 2026/05/21 08:51:24 by aborda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,8 @@ int main(int ac, char **av)
 
 	while (true)
 	{
-		/* PROMPT */
 		std::cout << "Que veux-tu faire ? (ADD, SEARCH, EXIT)" << std::endl;
 
-		/*
-		** GETLINE = Recupere l'input de l'entree standard
-		** 	C'est un appel bloquant, l'OS se met en pause jusqu'a <ENTER>
-		*/
 		if (!std::getline(std::cin, input))
 			return 1;
 

@@ -6,7 +6,7 @@
 /*   By: aborda <aborda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 13:55:40 by aborda            #+#    #+#             */
-/*   Updated: 2026/05/15 08:59:34 by aborda           ###   ########.fr       */
+/*   Updated: 2026/05/21 08:51:53 by aborda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,6 @@ PhoneBook::~PhoneBook()
 {
 }
 
-/* Ici on applique un buffer circulaire (8%8=0, 9%8=1 etc..) */
 void	PhoneBook::addContact()
 {
 	std::string firstname;
@@ -126,14 +125,12 @@ void	PhoneBook::searchContact() const
 	std::string	input;
 	int			index;
 
-	/* CHECK EMPTY LIST */
 	if (_count == 0)
 	{
 		std::cout << "Pas encore de contact dans la liste" << std::endl;
 		return ;
 	}
 
-	/* DISPLAY ARRAY */
 	for (int i = 0; i < _count; i++)
 	{
 		std::cout << std::right << std::setw(10) << i << "|";
@@ -157,19 +154,16 @@ void	PhoneBook::searchContact() const
 			std::cout << std::right << std::setw(10) << field << "|" << std::endl;
 	}
 
-	/* PICK CONTACT IN LIST */
 	std::cout << "Pick un contact dans la liste :" << std::endl;
 	if (!std::getline(std::cin, input))
 		return ;
 
-	/* CHECK SI VIDE */
 	if (input.empty())
 	{
 		std::cout << "Index eronne" << std::endl;
 		return ;
 	}
 
-	/* CHECK SI DIGIT */
 	for(std::string::size_type i = 0; i < input.size(); i++)
 	{
 		if (!std::isdigit(input[i]))
@@ -181,7 +175,6 @@ void	PhoneBook::searchContact() const
 
 	index = std::atoi(input.c_str());
 
-	/* DISPLAY */
 	if (index < 0 || index > (_count - 1))
 		std::cout << "Index eronne" << std::endl;
 	else
