@@ -205,13 +205,11 @@ Fixed operator/(const Fixed& a, const Fixed& b)
 	return result;
 }
 
-/* GETTERS */
 int Fixed::getRawBits(void) const
 {
 	return _rawBits;
 }
 
-/* SETTERS */
 void Fixed::setRawBits(int const raw)
 {
 	_rawBits = raw;

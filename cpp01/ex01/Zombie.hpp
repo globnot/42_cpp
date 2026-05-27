@@ -27,7 +27,6 @@ class Zombie
 		Zombie& operator=(const Zombie& other);
 		~Zombie();
 
-		//SETTERS
 		void	setName(std::string name);
 
 		void	announce(void);

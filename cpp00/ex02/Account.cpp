@@ -19,7 +19,6 @@ int Account::_totalAmount = 0;
 int	Account::_totalNbDeposits = 0;
 int	Account::_totalNbWithdrawals = 0;
 
-/* CONSTRUCTEUR */
 Account::Account(int initial_deposit) :
 	_accountIndex(_nbAccounts),
 	_amount(initial_deposit),
@@ -36,7 +35,6 @@ Account::Account(int initial_deposit) :
 	_totalAmount = _totalAmount + _amount;
 }
 
-/* DESTRUCTEUR */
 Account::~Account()
 {
 	_displayTimestamp();
@@ -49,7 +47,6 @@ Account::~Account()
 	_totalAmount = _totalAmount - _amount;
 }
 
-/* GETTERS */
 int	Account::getNbAccounts(void)
 {
 	return _nbAccounts;

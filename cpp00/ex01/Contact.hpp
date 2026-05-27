@@ -25,23 +25,17 @@ class Contact
 		std::string	_secret;
 
 	public:
-		/* CONSTRUCTEUR */
 		Contact();
-		/* CONSTRUCTEUR DE COPIE */
 		Contact(const Contact& other);
-		/* OPERATEUR D'AFFECTATION */
 		Contact& operator=(const Contact& other);
-		/* DESTRUCTEUR */
 		~Contact();
 
-		/* GETTERS */
 		std::string	getFirstname() const;
 		std::string	getLastname() const;
 		std::string	getNickname() const;
 		std::string	getPhone() const;
 		std::string	getSecret() const;
 
-		/* SETTERS */
 		void	setFirstname(std::string firstname);
 		void	setLastname(std::string lastname);
 		void	setNickname(std::string nickname);

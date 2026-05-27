@@ -25,13 +25,9 @@ class PhoneBook
 		bool	hasNonAscii(const std::string& s) const;
 
 	public:
-		/* CONSTRUCTEUR */
 		PhoneBook();
-		/* CONSTRUCTEUR DE COPIE */
 		PhoneBook(const PhoneBook& other);
-		/* OPERATEUR D'AFFECTATION */
 		PhoneBook& operator=(const PhoneBook& other);
-		/* DESTRUCTEUR */
 		~PhoneBook();
 
 		void	addContact();

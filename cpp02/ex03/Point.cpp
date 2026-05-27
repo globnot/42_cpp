@@ -44,7 +44,6 @@ Point::~Point()
 {
 }
 
-/* GETTERS */
 Fixed Point::getX(void) const
 {
 	return _x;

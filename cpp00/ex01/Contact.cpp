@@ -12,7 +12,6 @@
 
 #include "Contact.hpp"
 
-/* CONSTRUCTEUR */
 Contact::Contact() : 
 	_firstname(""),
 	_lastname(""),
@@ -22,7 +21,6 @@ Contact::Contact() :
 {
 }
 
-/* CONSTRUCTEUR DE COPIE */
 Contact::Contact(const Contact& other) : 
 	_firstname(other._firstname),
 	_lastname(other._lastname),
@@ -32,7 +30,6 @@ Contact::Contact(const Contact& other) :
 {
 }
 
-/* OPERATEUR D'AFFECTATION */
 Contact& Contact::operator=(const Contact& other)
 {
 	if (this != &other)
@@ -46,12 +43,10 @@ Contact& Contact::operator=(const Contact& other)
 	return *this;
 }
 
-/* DESTRUCTEUR */
 Contact::~Contact()
 {
 }
 
-/* GETTERS */
 std::string Contact::getFirstname() const
 {
 	return _firstname;
@@ -77,7 +72,6 @@ std::string Contact::getSecret() const
 	return _secret;
 }
 
-/* SETTERS */
 void Contact::setFirstname(std::string firstname)
 {
 	_firstname = firstname;

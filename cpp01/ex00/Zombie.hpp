@@ -21,13 +21,9 @@ class Zombie
 		std::string _name;
 
 	public :
-		/* CONSTRUCTEUR */
 		Zombie(std::string name);
-		/* CONSTRUCTEUR DE COPIE */
 		Zombie(const Zombie& other);
-		/* OPERATEUR D'AFFECTATION */
 		Zombie& operator=(const Zombie& other);
-		/* DESTRUCTEUR */
 		~Zombie();
 
 		void	announce(void);

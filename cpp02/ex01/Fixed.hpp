@@ -22,7 +22,6 @@ class Fixed
 		static const int	_fractBits;
 
 	public :
-		/* OCF */
 		Fixed();
 		Fixed(const int n);
 		Fixed(const float n);
@@ -33,10 +32,8 @@ class Fixed
 		float toFloat(void) const;
 		int toInt(void) const;
 		
-		/* GETTERS */
 		int getRawBits(void) const;
 
-		/* SETTERS */
 		void setRawBits(int const raw);
 };
 

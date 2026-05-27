@@ -14,19 +14,16 @@
 #include <iostream>
 #include <string>
 
-/* CONSTRUCTEUR */
 Zombie::Zombie(std::string name) : 
 	_name(name)
 {
 }
 
-/* CONSTRUCTEUR DE COPIE */
 Zombie::Zombie(const Zombie& other) : 
 	_name(other._name)
 {
 }
 
-/* OPERATEUR D'AFFECTATION */
 Zombie& Zombie::operator=(const Zombie& other)
 {
 	if (this != &other)
@@ -36,7 +33,6 @@ Zombie& Zombie::operator=(const Zombie& other)
 	return *this;
 }
 
- /* DESTRUCTEUR */
 Zombie::~Zombie()
 {
 	std::cout

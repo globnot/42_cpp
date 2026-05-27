@@ -20,16 +20,13 @@ class Fixed
 		static const int	_fractBits;
 
 	public :
-		/* CANONICAL FORM */
 		Fixed();
 		Fixed(const Fixed& other);
 		Fixed& operator=(const Fixed& other);
 		~Fixed();
 
-		/* GETTERS */
 		int getRawBits(void) const;
 
-		/* SETTERS */
 		void setRawBits(int const raw);
 };
 

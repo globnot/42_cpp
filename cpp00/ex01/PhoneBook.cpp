@@ -15,14 +15,12 @@
 #include <cstdlib>
 #include "PhoneBook.hpp"
 
-/* CONSTRUCTEUR */
 PhoneBook::PhoneBook() :
 	_index(0),
 	_count(0)
 {
 }
 
-/* CONSTRUCTEUR DE COPIE */
 PhoneBook::PhoneBook(const PhoneBook& other) :
 	_index(other._index),
 	_count(other._count)
@@ -31,7 +29,6 @@ PhoneBook::PhoneBook(const PhoneBook& other) :
 		_contact[i] = other._contact[i];
 }
 
-/* OPERATEUR D'AFFECTATION */
 PhoneBook& PhoneBook::operator=(const PhoneBook& other)
 {
 	if (this != &other)
@@ -44,7 +41,6 @@ PhoneBook& PhoneBook::operator=(const PhoneBook& other)
 	return *this;
 }
 
-/* DESTRUCTEUR */
 PhoneBook::~PhoneBook()
 {
 }

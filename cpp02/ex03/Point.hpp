@@ -23,14 +23,12 @@ class Point
 		const Fixed _y;
 
 	public :
-		/* OCF */
 		Point();
 		Point(const float _x, const float _y);
 		Point(const Point& other);
 		Point& operator=(const Point& other);
 		~Point();
 
-		/* GETTERS */
 		Fixed getX(void) const;
 		Fixed getY(void) const;
 };
