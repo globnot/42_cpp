@@ -40,21 +40,21 @@ all: $(NAME)
 $(OBJ_DIR)/%.o: %.cpp
 	@mkdir -p $(dir $@)
 	@$(CC) $(CFLAGS) -c $< -o $@
-	@echo "$(GREEN)✓$(RESET) Compiled: $(CYAN)$<$(RESET)"
+	@printf "$(GREEN)✓$(RESET) Compiled: $(CYAN)$<$(RESET)\n"
 
 $(NAME): $(OBJS)
 	@$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
-	@echo "$(GREEN)==========================================$(RESET)"
-	@echo "$(GREEN)✓ $(NAME) created successfully!$(RESET)"
-	@echo "$(GREEN)==========================================$(RESET)"
+	@printf "$(GREEN)==========================================$(RESET)\n"
+	@printf "$(GREEN)✓ $(NAME) created successfully!$(RESET)\n"
+	@printf "$(GREEN)==========================================$(RESET)\n"
 
 clean:
 	@rm -rf $(OBJ_DIR)
-	@echo "$(YELLOW)✓ Object files removed$(RESET)"
+	@printf "$(YELLOW)✓ Object files removed$(RESET)\n"
 
 fclean: clean
 	@rm -f $(NAME)
-	@echo "$(YELLOW)✓ $(NAME) removed$(RESET)"
+	@printf "$(YELLOW)✓ $(NAME) removed$(RESET)\n"
 
 re: fclean all
 
